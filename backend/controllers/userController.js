@@ -78,7 +78,6 @@ exports.UploadPhoto=catchAsync(async(req,res,next)=>{
     new: true,
     runValidators: true
   });
-  console.log("UPDATED USER",updatedUser);
 
   res.status(200).json({
     status:'success',
